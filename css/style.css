@@ -102,9 +102,7 @@
     height: 120px;
     background: linear-gradient(180deg, #3E2723, #1f1412);
     border-radius: 10px;
-    box-shadow:
-        0 10px 25px rgba(0,0,0,0.4),
-        inset 0 -15px 25px rgba(212,168,55,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4), inset 0 -15px 25px rgba(212,168,55,0.08);
 }
 
 /* Крышка туши */
@@ -345,7 +343,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: var(--transition);
-    fill: var(--secondary-color);
+    fill: var(--autumn-light);
 }
 
 /* Иконка закрытия скрыта по умолчанию */
