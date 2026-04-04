@@ -1404,6 +1404,175 @@
         max-width: 100%;
         padding: 0;
     }
+
+    /* ДЕНЬ БЛАГОДАРЕНИЯ / ОСЕННИЕ ЛИСТЬЯ */
+    /* Кнопка переключения — смещена и меньше */
+    .autumn-toggle-btn {
+        top: 30px;
+        right: 36px;
+        width: 50px;
+        height: 50px;
+        background: rgba(107, 59, 26, 0.9);
+        border: 2px solid #D1B27B;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(209, 178, 123, 0.6);
+    }
+
+    .autumn-svg {
+        width: 28px;
+        height: 28px;
+        filter: 
+            drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))
+            drop-shadow(0 0 3px #D1B27B)
+            drop-shadow(0 0 6px #B3682D)
+            drop-shadow(0 0 9px #9D3E13);
+    }
+
+    @keyframes leafGlow {
+        0%, 100% { 
+            transform: scale(1);
+            filter: 
+                drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))
+                drop-shadow(0 0 3px #D1B27B)
+                drop-shadow(0 0 6px #B3682D)
+                drop-shadow(0 0 9px #9D3E13);
+        }
+        50% { 
+            transform: scale(1.15);
+            filter: 
+                drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))
+                drop-shadow(0 0 4px #D1B27B)
+                drop-shadow(0 0 8px #B3682D)
+                drop-shadow(0 0 12px #9D3E13);
+        }
+    }
+
+    /* Падающие листья */
+    .autumn-container .leaf {
+        top: -30px;
+    }
+
+    /* Уменьшены размеры всех листьев */
+    .leaf.l1 { width: 18px; height: 18px; }
+    .leaf.l2 { width: 22px; height: 22px; }
+    .leaf.l3 { width: 15px; height: 15px; }
+    .leaf.l4 { width: 21px; height: 21px; }
+    .leaf.l5 { width: 16px; height: 16px; }
+    .leaf.l6 { width: 20px; height: 20px; }
+    .leaf.l7 { width: 24px; height: 24px; }
+    .leaf.l8 { width: 14px; height: 14px; }
+    .leaf.l9 { width: 21px; height: 21px; }
+    .leaf.l10 { width: 18px; height: 18px; }
+    .leaf.l11 { width: 22px; height: 22px; }
+    .leaf.l12 { width: 15px; height: 15px; }
+    .leaf.l13 { width: 21px; height: 21px; }
+    .leaf.l14 { width: 16px; height: 16px; }
+    .leaf.l15 { width: 20px; height: 20px; }
+    .leaf.l16 { width: 24px; height: 24px; }
+    .leaf.l17 { width: 14px; height: 14px; }
+    .leaf.l18 { width: 21px; height: 21px; }
+    .leaf.l19 { width: 18px; height: 18px; }
+    .leaf.l20 { width: 22px; height: 22px; }
+    .leaf.l21 { width: 15px; height: 15px; }
+    .leaf.l22 { width: 21px; height: 21px; }
+    .leaf.l23 { width: 16px; height: 16px; }
+    .leaf.l24 { width: 20px; height: 20px; }
+    .leaf.l25 { width: 24px; height: 24px; }
+    .leaf.l26 { width: 14px; height: 14px; }
+    .leaf.l27 { width: 21px; height: 21px; }
+    .leaf.l28 { width: 18px; height: 18px; }
+    .leaf.l29 { width: 22px; height: 22px; }
+    .leaf.l30 { width: 15px; height: 15px; }
+    .leaf.l31 { width: 21px; height: 21px; }
+    .leaf.l32 { width: 16px; height: 16px; }
+    .leaf.l33 { width: 20px; height: 20px; }
+    .leaf.l34 { width: 24px; height: 24px; }
+    .leaf.l35 { width: 14px; height: 14px; }
+    .leaf.l36 { width: 21px; height: 21px; }
+    .leaf.l37 { width: 18px; height: 18px; }
+    .leaf.l38 { width: 22px; height: 21px; }
+    .leaf.l39 { width: 15px; height: 15px; }
+    .leaf.l40 { width: 21px; height: 21px; }
+
+    /* Тыквенные огоньки */
+    .autumn-container .pumpkin-glow {
+        width: 4px;
+        height: 4px;
+        box-shadow: 0 0 8px #B3682D;
+    }
+
+    @keyframes pumpkinFlicker {
+        0%, 100% { 
+            opacity: 0.3; 
+            transform: scale(0.7);
+            box-shadow: 0 0 3px #B3682D;
+        }
+        50% { 
+            opacity: 1; 
+            transform: scale(1.1);
+            box-shadow: 0 0 12px #D1B27B;
+        }
+    }
+
+    /* Более редкие позиции для листьев */
+    .leaf.l1 { left: 5%; }
+    .leaf.l2 { left: 12%; }
+    .leaf.l3 { left: 20%; }
+    .leaf.l4 { left: 28%; }
+    .leaf.l5 { left: 35%; }
+    .leaf.l6 { left: 42%; }
+    .leaf.l7 { left: 50%; }
+    .leaf.l8 { left: 58%; }
+    .leaf.l9 { left: 65%; }
+    .leaf.l10 { left: 72%; }
+    .leaf.l11 { left: 80%; }
+    .leaf.l12 { left: 88%; }
+    .leaf.l13 { left: 95%; }
+    .leaf.l14 { left: 8%; }
+    .leaf.l15 { left: 15%; }
+    .leaf.l16 { left: 22%; }
+    .leaf.l17 { left: 30%; }
+    .leaf.l18 { left: 38%; }
+    .leaf.l19 { left: 45%; }
+    .leaf.l20 { left: 52%; }
+    .leaf.l21 { left: 60%; }
+    .leaf.l22 { left: 68%; }
+    .leaf.l23 { left: 75%; }
+    .leaf.l24 { left: 82%; }
+    .leaf.l25 { left: 90%; }
+    .leaf.l26 { left: 3%; }
+    .leaf.l27 { left: 10%; }
+    .leaf.l28 { left: 18%; }
+    .leaf.l29 { left: 25%; }
+    .leaf.l30 { left: 33%; }
+    .leaf.l31 { left: 40%; }
+    .leaf.l32 { left: 48%; }
+    .leaf.l33 { left: 55%; }
+    .leaf.l34 { left: 62%; }
+    .leaf.l35 { left: 70%; }
+    .leaf.l36 { left: 78%; }
+    .leaf.l37 { left: 85%; }
+    .leaf.l38 { left: 92%; }
+    .leaf.l39 { left: 2%; }
+    .leaf.l40 { left: 98%; }
+
+    /* Позиции тыквенных огоньков */
+    .pumpkin-glow.g1 { top: 15%; left: 10%; }
+    .pumpkin-glow.g2 { top: 30%; left: 25%; }
+    .pumpkin-glow.g3 { top: 45%; left: 45%; }
+    .pumpkin-glow.g4 { top: 65%; left: 65%; }
+    .pumpkin-glow.g5 { top: 85%; left: 85%; }
+    .pumpkin-glow.g6 { top: 25%; left: 5%; }
+    .pumpkin-glow.g7 { top: 75%; left: 20%; }
+    .pumpkin-glow.g8 { top: 55%; left: 75%; }
+
+    /* Меньше градиента на фоне для производительности */
+    .autumn-container::before {
+        background: radial-gradient(circle at 50% 30%, 
+            rgba(209, 178, 123, 0.015) 0%, 
+            rgba(184, 134, 85, 0.02) 50%,
+            rgba(108, 59, 26, 0.005) 100%);
+    }
 }
 
 /* Медиазапрос для мобильных (от 481px до 768px) */
@@ -2746,6 +2915,182 @@
     .cookie__container--label {
         order: 2;
     }
+
+    /* ДЕНЬ БЛАГОДАРЕНИЯ / ОСЕННИЕ ЛИСТЬЯ */
+    /* Кнопка переключения */
+    .autumn-toggle-btn {
+        position: fixed;
+        top: 18px;
+        right: 50px;
+        width: 55px;
+        height: 55px;
+        background: rgba(107, 59, 26, 0.85);
+        border: 2px solid #D1B27B;
+        border-radius: var(--border-radius);
+        cursor: pointer;
+        z-index: 10001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 12px rgba(209, 178, 123, 0.55);
+    }
+
+    .autumn-svg {
+        width: 30px;
+        height: 30px;
+        filter: 
+            drop-shadow(0 1.5px 3px rgba(0, 0, 0, 0.25))
+            drop-shadow(0 0 3.5px #D1B27B)
+            drop-shadow(0 0 7px #B3682D)
+            drop-shadow(0 0 10px #9D3E13);
+    }
+
+    @keyframes leafGlow {
+        0%, 100% { 
+            transform: scale(1);
+            filter: 
+                drop-shadow(0 1.5px 3px rgba(0, 0, 0, 0.25))
+                drop-shadow(0 0 3.5px #D1B27B)
+                drop-shadow(0 0 7px #B3682D)
+                drop-shadow(0 0 10px #9D3E13);
+        }
+        50% { 
+            transform: scale(1.18);
+            filter: 
+                drop-shadow(0 1.5px 3px rgba(0, 0, 0, 0.25))
+                drop-shadow(0 0 5px #D1B27B)
+                drop-shadow(0 0 10px #B3682D)
+                drop-shadow(0 0 15px #9D3E13);
+        }
+    }
+
+    /* Падающие листья */
+    .autumn-container .leaf {
+        top: -40px;
+    }
+
+    /* Размеры листьев для планшетов */
+    .leaf.l1 { width: 22px; height: 22px; }
+    .leaf.l2 { width: 28px; height: 28px; }
+    .leaf.l3 { width: 19px; height: 19px; }
+    .leaf.l4 { width: 26px; height: 26px; }
+    .leaf.l5 { width: 20px; height: 20px; }
+    .leaf.l6 { width: 24px; height: 24px; }
+    .leaf.l7 { width: 29px; height: 29px; }
+    .leaf.l8 { width: 17px; height: 17px; }
+    .leaf.l9 { width: 26px; height: 26px; }
+    .leaf.l10 { width: 22px; height: 22px; }
+    .leaf.l11 { width: 28px; height: 28px; }
+    .leaf.l12 { width: 19px; height: 19px; }
+    .leaf.l13 { width: 26px; height: 26px; }
+    .leaf.l14 { width: 20px; height: 20px; }
+    .leaf.l15 { width: 24px; height: 24px; }
+    .leaf.l16 { width: 29px; height: 29px; }
+    .leaf.l17 { width: 17px; height: 17px; }
+    .leaf.l18 { width: 26px; height: 26px; }
+    .leaf.l19 { width: 22px; height: 22px; }
+    .leaf.l20 { width: 28px; height: 28px; }
+    .leaf.l21 { width: 19px; height: 19px; }
+    .leaf.l22 { width: 26px; height: 26px; }
+    .leaf.l23 { width: 20px; height: 20px; }
+    .leaf.l24 { width: 24px; height: 24px; }
+    .leaf.l25 { width: 29px; height: 29px; }
+    .leaf.l26 { width: 17px; height: 17px; }
+    .leaf.l27 { width: 26px; height: 26px; }
+    .leaf.l28 { width: 22px; height: 22px; }
+    .leaf.l29 { width: 28px; height: 28px; }
+    .leaf.l30 { width: 19px; height: 19px; }
+    .leaf.l31 { width: 26px; height: 26px; }
+    .leaf.l32 { width: 20px; height: 20px; }
+    .leaf.l33 { width: 24px; height: 24px; }
+    .leaf.l34 { width: 29px; height: 29px; }
+    .leaf.l35 { width: 17px; height: 17px; }
+    .leaf.l36 { width: 26px; height: 26px; }
+    .leaf.l37 { width: 22px; height: 22px; }
+    .leaf.l38 { width: 28px; height: 26px; }
+    .leaf.l39 { width: 19px; height: 19px; }
+    .leaf.l40 { width: 26px; height: 26px; }
+
+    /* Тыквенные огоньки среднего размера */
+    .autumn-container .pumpkin-glow {
+        width: 5px;
+        height: 5px;
+        box-shadow: 0 0 10px #B3682D;
+    }
+
+    /* Анимация тыквенных огоньков */
+    @keyframes pumpkinFlicker {
+        0%, 100% { 
+            opacity: 0.3; 
+            transform: scale(0.75); 
+            box-shadow: 0 0 5px #B3682D;
+        }
+        50% { 
+            opacity: 1; 
+            transform: scale(1.15);
+            box-shadow: 0 0 15px #D1B27B;
+        }
+    }
+
+    /* Оптимизированные позиции для листьев */
+    .leaf.l1 { left: 3%; }
+    .leaf.l2 { left: 10%; }
+    .leaf.l3 { left: 17%; }
+    .leaf.l4 { left: 25%; }
+    .leaf.l5 { left: 32%; }
+    .leaf.l6 { left: 40%; }
+    .leaf.l7 { left: 48%; }
+    .leaf.l8 { left: 55%; }
+    .leaf.l9 { left: 62%; }
+    .leaf.l10 { left: 70%; }
+    .leaf.l11 { left: 78%; }
+    .leaf.l12 { left: 85%; }
+    .leaf.l13 { left: 92%; }
+    .leaf.l14 { left: 7%; }
+    .leaf.l15 { left: 14%; }
+    .leaf.l16 { left: 21%; }
+    .leaf.l17 { left: 28%; }
+    .leaf.l18 { left: 35%; }
+    .leaf.l19 { left: 42%; }
+    .leaf.l20 { left: 50%; }
+    .leaf.l21 { left: 57%; }
+    .leaf.l22 { left: 65%; }
+    .leaf.l23 { left: 72%; }
+    .leaf.l24 { left: 80%; }
+    .leaf.l25 { left: 87%; }
+    .leaf.l26 { left: 2%; }
+    .leaf.l27 { left: 8%; }
+    .leaf.l28 { left: 15%; }
+    .leaf.l29 { left: 22%; }
+    .leaf.l30 { left: 30%; }
+    .leaf.l31 { left: 38%; }
+    .leaf.l32 { left: 45%; }
+    .leaf.l33 { left: 52%; }
+    .leaf.l34 { left: 60%; }
+    .leaf.l35 { left: 68%; }
+    .leaf.l36 { left: 75%; }
+    .leaf.l37 { left: 82%; }
+    .leaf.l38 { left: 90%; }
+    .leaf.l39 { left: 5%; }
+    .leaf.l40 { left: 96%; }
+
+    /* Позиции тыквенных огоньков */
+    .pumpkin-glow.g1 { top: 12%; left: 12%; }
+    .pumpkin-glow.g2 { top: 28%; left: 30%; }
+    .pumpkin-glow.g3 { top: 42%; left: 50%; }
+    .pumpkin-glow.g4 { top: 62%; left: 70%; }
+    .pumpkin-glow.g5 { top: 82%; left: 88%; }
+    .pumpkin-glow.g6 { top: 28%; left: 8%; }
+    .pumpkin-glow.g7 { top: 72%; left: 25%; }
+    .pumpkin-glow.g8 { top: 52%; left: 80%; }
+
+    /* Средний градиент на фоне */
+    .autumn-container::before {
+        background: radial-gradient(circle at 50% 30%, 
+            rgba(209, 178, 123, 0.018) 0%, 
+            rgba(184, 134, 85, 0.025) 50%,
+            rgba(108, 59, 26, 0.008) 100%);
+    }
 }
 
 /* Планшеты горизонтальные/ноутбуки 769px-968px */
@@ -3848,6 +4193,146 @@
     .cookie__container--label {
         order: 2;
     }
+
+    /* ДЕНЬ БЛАГОДАРЕНИЯ / ОСЕННИЕ ЛИСТЬЯ */
+    /* Кнопка переключения */
+    .autumn-toggle-btn {
+        position: fixed;
+        top: 25px;
+        right: 37px;
+        width: 50px;
+        height: 50px;
+        background: rgba(107, 59, 26, 0.9);
+        border: 1.5px solid #D1B27B;
+        border-radius: var(--border-radius);
+        box-shadow: 0 0 10px rgba(209, 178, 123, 0.5);
+    }
+
+    .autumn-svg {
+        width: 28px;
+        height: 28px;
+        filter: 
+            drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2))
+            drop-shadow(0 0 3px #D1B27B)
+            drop-shadow(0 0 6px #B3682D)
+            drop-shadow(0 0 8px #9D3E13);
+    }
+
+    @keyframes leafGlow {
+        0%, 100% { 
+            transform: scale(1);
+            filter: 
+                drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2))
+                drop-shadow(0 0 3px #D1B27B)
+                drop-shadow(0 0 6px #B3682D)
+                drop-shadow(0 0 8px #9D3E13);
+        }
+        50% { 
+            transform: scale(1.15);
+            filter: 
+                drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2))
+                drop-shadow(0 0 4px #D1B27B)
+                drop-shadow(0 0 8px #B3682D)
+                drop-shadow(0 0 12px #9D3E13);
+        }
+    }
+
+    /* Падающие листья */
+    .autumn-container .leaf {
+        top: -35px;
+    }
+
+    /* Размеры листьев */
+    .leaf.l1, .leaf.l10, .leaf.l19, .leaf.l28, .leaf.l37 { width: 20px; height: 20px; }
+    .leaf.l2, .leaf.l11, .leaf.l20, .leaf.l29, .leaf.l38 { width: 25px; height: 25px; }
+    .leaf.l3, .leaf.l12, .leaf.l21, .leaf.l30, .leaf.l39 { width: 17px; height: 17px; }
+    .leaf.l4, .leaf.l13, .leaf.l22, .leaf.l31, .leaf.l40 { width: 24px; height: 24px; }
+    .leaf.l5, .leaf.l14, .leaf.l23, .leaf.l32 { width: 18px; height: 18px; }
+    .leaf.l6, .leaf.l15, .leaf.l24, .leaf.l33 { width: 22px; height: 22px; }
+    .leaf.l7, .leaf.l16, .leaf.l25, .leaf.l34 { width: 26px; height: 26px; }
+    .leaf.l8, .leaf.l17, .leaf.l26, .leaf.l35 { width: 15px; height: 15px; }
+    .leaf.l9, .leaf.l18, .leaf.l27, .leaf.l36 { width: 24px; height: 24px; }
+
+    /* Тыквенные огоньки */
+    .autumn-container .pumpkin-glow {
+        width: 4px;
+        height: 4px;
+        box-shadow: 0 0 8px #B3682D;
+    }
+
+    /* Анимация тыквенных огоньков */
+    @keyframes pumpkinFlicker {
+        0%, 100% { 
+            opacity: 0.3; 
+            transform: scale(0.7); 
+            box-shadow: 0 0 4px #B3682D;
+        }
+        50% { 
+            opacity: 1; 
+            transform: scale(1.1);
+            box-shadow: 0 0 12px #D1B27B;
+        }
+    }
+
+    /* Позиции листьев (как у Патрика) */
+    .leaf.l1 { left: 4%; }
+    .leaf.l2 { left: 11%; }
+    .leaf.l3 { left: 18%; }
+    .leaf.l4 { left: 26%; }
+    .leaf.l5 { left: 33%; }
+    .leaf.l6 { left: 41%; }
+    .leaf.l7 { left: 49%; }
+    .leaf.l8 { left: 56%; }
+    .leaf.l9 { left: 63%; }
+    .leaf.l10 { left: 71%; }
+    .leaf.l11 { left: 79%; }
+    .leaf.l12 { left: 86%; }
+    .leaf.l13 { left: 93%; }
+    .leaf.l14 { left: 8%; }
+    .leaf.l15 { left: 15%; }
+    .leaf.l16 { left: 22%; }
+    .leaf.l17 { left: 29%; }
+    .leaf.l18 { left: 36%; }
+    .leaf.l19 { left: 43%; }
+    .leaf.l20 { left: 51%; }
+    .leaf.l21 { left: 58%; }
+    .leaf.l22 { left: 66%; }
+    .leaf.l23 { left: 73%; }
+    .leaf.l24 { left: 81%; }
+    .leaf.l25 { left: 88%; }
+    .leaf.l26 { left: 3%; }
+    .leaf.l27 { left: 9%; }
+    .leaf.l28 { left: 16%; }
+    .leaf.l29 { left: 23%; }
+    .leaf.l30 { left: 31%; }
+    .leaf.l31 { left: 39%; }
+    .leaf.l32 { left: 46%; }
+    .leaf.l33 { left: 53%; }
+    .leaf.l34 { left: 61%; }
+    .leaf.l35 { left: 69%; }
+    .leaf.l36 { left: 76%; }
+    .leaf.l37 { left: 83%; }
+    .leaf.l38 { left: 91%; }
+    .leaf.l39 { left: 6%; }
+    .leaf.l40 { left: 97%; }
+
+    /* Позиции тыквенных огоньков */
+    .pumpkin-glow.g1 { top: 10%; left: 10%; }
+    .pumpkin-glow.g2 { top: 25%; left: 28%; }
+    .pumpkin-glow.g3 { top: 40%; left: 48%; }
+    .pumpkin-glow.g4 { top: 60%; left: 68%; }
+    .pumpkin-glow.g5 { top: 80%; left: 86%; }
+    .pumpkin-glow.g6 { top: 25%; left: 7%; }
+    .pumpkin-glow.g7 { top: 70%; left: 22%; }
+    .pumpkin-glow.g8 { top: 50%; left: 78%; }
+
+    /* Градиент на фоне */
+    .autumn-container::before {
+        background: radial-gradient(circle at 50% 30%, 
+            rgba(209, 178, 123, 0.015) 0%, 
+            rgba(184, 134, 85, 0.02) 50%,
+            rgba(108, 59, 26, 0.006) 100%);
+    }
 }
 
 /* Ноутбуки 969px-1199px - лёгкая адаптация */
@@ -4937,5 +5422,145 @@
     .cookie__decline {
         padding: 10px 20px;
         font-size: 15px;
+    }
+
+    /* ДЕНЬ БЛАГОДАРЕНИЯ / ОСЕННИЕ ЛИСТЬЯ */
+    /* Кнопка переключения */
+    .autumn-toggle-btn {
+        position: fixed;
+        top: 15px;
+        right: 37px;
+        width: 56px;
+        height: 56px;
+        background: rgba(107, 59, 26, 0.9);
+        border: 1.5px solid #D1B27B;
+        border-radius: var(--border-radius);
+        box-shadow: 0 0 13px rgba(209, 178, 123, 0.5);
+    }
+
+    .autumn-svg {
+        width: 30px;
+        height: 30px;
+        filter: 
+            drop-shadow(0 1.8px 3.5px rgba(0, 0, 0, 0.18))
+            drop-shadow(0 0 2.5px #D1B27B)
+            drop-shadow(0 0 5px #B3682D)
+            drop-shadow(0 0 7px #9D3E13);
+    }
+
+    @keyframes leafGlow {
+        0%, 100% { 
+            transform: scale(1);
+            filter: 
+                drop-shadow(0 1.8px 3.5px rgba(0, 0, 0, 0.18))
+                drop-shadow(0 0 2.5px #D1B27B)
+                drop-shadow(0 0 5px #B3682D)
+                drop-shadow(0 0 7px #9D3E13);
+        }
+        50% { 
+            transform: scale(1.18);
+            filter: 
+                drop-shadow(0 1.8px 3.5px rgba(0, 0, 0, 0.18))
+                drop-shadow(0 0 4px #D1B27B)
+                drop-shadow(0 0 8px #B3682D)
+                drop-shadow(0 0 12px #9D3E13);
+        }
+    }
+
+    /* Падающие листья */
+    .autumn-container .leaf {
+        top: -45px;
+    }
+
+    /* Размеры листьев */
+    .leaf.l1, .leaf.l10, .leaf.l19, .leaf.l28, .leaf.l37 { width: 26px; height: 26px; }
+    .leaf.l2, .leaf.l11, .leaf.l20, .leaf.l29, .leaf.l38 { width: 33px; height: 33px; }
+    .leaf.l3, .leaf.l12, .leaf.l21, .leaf.l30, .leaf.l39 { width: 22px; height: 22px; }
+    .leaf.l4, .leaf.l13, .leaf.l22, .leaf.l31, .leaf.l40 { width: 31px; height: 31px; }
+    .leaf.l5, .leaf.l14, .leaf.l23, .leaf.l32 { width: 24px; height: 24px; }
+    .leaf.l6, .leaf.l15, .leaf.l24, .leaf.l33 { width: 29px; height: 29px; }
+    .leaf.l7, .leaf.l16, .leaf.l25, .leaf.l34 { width: 35px; height: 35px; }
+    .leaf.l8, .leaf.l17, .leaf.l26, .leaf.l35 { width: 21px; height: 21px; }
+    .leaf.l9, .leaf.l18, .leaf.l27, .leaf.l36 { width: 31px; height: 31px; }
+
+    /* Тыквенные огоньки */
+    .autumn-container .pumpkin-glow {
+        width: 5.5px;
+        height: 5.5px;
+        box-shadow: 0 0 11px #B3682D;
+    }
+
+    /* Анимация тыквенных огоньков */
+    @keyframes pumpkinFlicker {
+        0%, 100% { 
+            opacity: 0.35; 
+            transform: scale(0.85); 
+            box-shadow: 0 0 6px #B3682D;
+        }
+        50% { 
+            opacity: 1; 
+            transform: scale(1.25);
+            box-shadow: 0 0 16px #D1B27B;
+        }
+    }
+
+    /* Позиции листьев */
+    .leaf.l1 { left: 2.5%; }
+    .leaf.l2 { left: 9%; }
+    .leaf.l3 { left: 16%; }
+    .leaf.l4 { left: 23%; }
+    .leaf.l5 { left: 31%; }
+    .leaf.l6 { left: 39%; }
+    .leaf.l7 { left: 46%; }
+    .leaf.l8 { left: 53%; }
+    .leaf.l9 { left: 61%; }
+    .leaf.l10 { left: 69%; }
+    .leaf.l11 { left: 76%; }
+    .leaf.l12 { left: 83%; }
+    .leaf.l13 { left: 89%; }
+    .leaf.l14 { left: 96%; }
+    .leaf.l15 { left: 6%; }
+    .leaf.l16 { left: 13%; }
+    .leaf.l17 { left: 19%; }
+    .leaf.l18 { left: 26%; }
+    .leaf.l19 { left: 33%; }
+    .leaf.l20 { left: 41%; }
+    .leaf.l21 { left: 49%; }
+    .leaf.l22 { left: 56%; }
+    .leaf.l23 { left: 63%; }
+    .leaf.l24 { left: 71%; }
+    .leaf.l25 { left: 79%; }
+    .leaf.l26 { left: 86%; }
+    .leaf.l27 { left: 93%; }
+    .leaf.l28 { left: 99%; }
+    .leaf.l29 { left: 4%; }
+    .leaf.l30 { left: 11%; }
+    .leaf.l31 { left: 21%; }
+    .leaf.l32 { left: 29%; }
+    .leaf.l33 { left: 36%; }
+    .leaf.l34 { left: 43%; }
+    .leaf.l35 { left: 51%; }
+    .leaf.l36 { left: 59%; }
+    .leaf.l37 { left: 66%; }
+    .leaf.l38 { left: 73%; }
+    .leaf.l39 { left: 81%; }
+    .leaf.l40 { left: 91%; }
+
+    /* Позиции тыквенных огоньков */
+    .pumpkin-glow.g1 { top: 12%; left: 16%; }
+    .pumpkin-glow.g2 { top: 27%; left: 37%; }
+    .pumpkin-glow.g3 { top: 42%; left: 57%; }
+    .pumpkin-glow.g4 { top: 62%; left: 77%; }
+    .pumpkin-glow.g5 { top: 82%; left: 92%; }
+    .pumpkin-glow.g6 { top: 32%; left: 11%; }
+    .pumpkin-glow.g7 { top: 72%; left: 32%; }
+    .pumpkin-glow.g8 { top: 52%; left: 87%; }
+
+    /* Градиент на фоне */
+    .autumn-container::before {
+        background: radial-gradient(circle at 50% 30%, 
+            rgba(209, 178, 123, 0.022) 0%, 
+            rgba(184, 134, 85, 0.028) 50%,
+            rgba(108, 59, 26, 0.012) 100%);
     }
 }
